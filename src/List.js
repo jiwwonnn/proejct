@@ -1,9 +1,11 @@
+import {Link} from "react-router-dom";
+
 const List = ({ data, loginUserInfo  }) => {
 
   const formattedDate = new Date(data.newDate).toISOString().split('T')[0]; // YYYY-MM-DD 형식으로 변환
 
   return (
-    <a href="" className='list'>
+    <Link href="" className='list'>
       <span className="date">
         {formattedDate}
       </span>
@@ -17,7 +19,7 @@ const List = ({ data, loginUserInfo  }) => {
       <div className="content">
         {data.info}
       </div>
-    </a>
+    </Link>
   )
 }
 
