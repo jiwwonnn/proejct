@@ -1,5 +1,4 @@
 import './assets/style/style.scss'
-import List from "./List";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Main from "./Main";
 import Write from "./Write";
